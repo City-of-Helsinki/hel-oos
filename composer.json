@@ -48,7 +48,19 @@
     "wpackagist-plugin/responsive-video-embed": "^0.2.2"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^2.5.1"
+    "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",
+    "wpackagist-plugin/debug-bar": "dev-trunk",
+    "wpackagist-plugin/debug-bar-console": "dev-trunk",
+    "wpackagist-plugin/log-deprecated-notices": "dev-trunk",
+    "wpackagist-plugin/p3-profiler": "dev-trunk",
+    "wpackagist-plugin/post-type-switcher": "~3",
+    "wpackagist-plugin/query-monitor": "dev-trunk",
+    "wpackagist-plugin/rewrite-rules-inspector": "dev-trunk",
+    "wpackagist-plugin/simply-show-ids": "dev-trunk",
+    "wpackagist-plugin/theme-check": "dev-trunk",
+    "wpackagist-plugin/user-switching": "dev-trunk",
+    "wpackagist-plugin/wordpress-importer": "dev-trunk",
+    "wpackagist-plugin/wp-sweep": "~1"
   },
   "extra": {
     "installer-paths": {
