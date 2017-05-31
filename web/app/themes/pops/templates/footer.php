@@ -6,9 +6,13 @@
  * @package POPS
  */
 
+wp_footer();
+
 ?>
 
-<?php wp_footer(); ?>
+<footer>
+  footer
+</footer>
 
 </body>
 </html>

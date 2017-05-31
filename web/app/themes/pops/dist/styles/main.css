@@ -1406,7 +1406,7 @@ html {
 }
 
 body {
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "Helsinki Grotesk", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
   color: #333333;
@@ -1608,7 +1608,7 @@ h6 .small,
 
 h1,
 .h1 {
-  font-size: 41px;
+  font-size: 32px;
 }
 
 h2,
@@ -2041,7 +2041,8 @@ pre code {
   }
 }
 
-.container-fluid {
+.container-fluid,
+.header {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -2049,12 +2050,15 @@ pre code {
 }
 
 .container-fluid:before,
-.container-fluid:after {
+.header:before,
+.container-fluid:after,
+.header:after {
   content: " ";
   display: table;
 }
 
-.container-fluid:after {
+.container-fluid:after,
+.header:after {
   clear: both;
 }
 
@@ -6336,7 +6340,9 @@ tbody.collapse.in {
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
-.container-fluid > .navbar-collapse {
+.header > .navbar-header,
+.container-fluid > .navbar-collapse,
+.header > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -6345,7 +6351,9 @@ tbody.collapse.in {
   .container > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
-  .container-fluid > .navbar-collapse {
+  .header > .navbar-header,
+  .container-fluid > .navbar-collapse,
+  .header > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -6407,7 +6415,8 @@ tbody.collapse.in {
 
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
-  .navbar > .container-fluid .navbar-brand {
+  .navbar > .container-fluid .navbar-brand,
+  .navbar > .header .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -7317,7 +7326,8 @@ a.badge:focus {
 }
 
 .container .jumbotron,
-.container-fluid .jumbotron {
+.container-fluid .jumbotron,
+.header .jumbotron {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
@@ -7334,7 +7344,8 @@ a.badge:focus {
   }
 
   .container .jumbotron,
-  .container-fluid .jumbotron {
+  .container-fluid .jumbotron,
+  .header .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -8599,7 +8610,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "Helsinki Grotesk", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8733,7 +8744,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "Helsinki Grotesk", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -12573,6 +12584,10 @@ img {
   border: 0;
 }
 
+a {
+  color: inherit;
+}
+
 .alignnone {
   margin-left: 0;
   margin-right: 0;
@@ -12674,5 +12689,108 @@ body#tinymce {
   background-color: #FFF;
   color: #000;
   text-decoration: none;
+}
+
+.header {
+  color: white !important;
+}
+
+.home .header {
+  background-color: #00D7A7;
+}
+
+.blog .header {
+  background-color: #F5A3C7;
+}
+
+.about-page .header {
+  background-color: #9FC9EB;
+}
+
+.downloads .header {
+  background-color: #DEDFE1;
+}
+
+.header__logo {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    float: left;
+    width: 25%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .header__logo {
+    text-align: left;
+  }
+}
+
+.header__menu {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header__menu {
+    float: left;
+    width: 75%;
+  }
+}
+
+.header__menu .menu__item {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+
+.header__menu .menu__item:first-child {
+  padding-left: 0;
+}
+
+.header__menu .menu__item:last-child {
+  padding-right: 0;
+}
+
+.header__menu .menu__item .menu__link {
+  opacity: .9;
+}
+
+.header__menu .menu__item .menu__link:hover {
+  opacity: 1;
+}
+
+.header__menu .menu__item .menu__link:active {
+  border-bottom: 1px solid white;
+}
+
+@media all and (min-width: 768px) {
+  .header__menu {
+    text-align: right;
+    font-size: 24px;
+  }
 }
 
