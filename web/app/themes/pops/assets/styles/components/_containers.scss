@@ -1,0 +1,37 @@
+.main-container {
+  padding: 48px 32px;
+}
+.medium-container {
+  padding: 32px;
+}
+.header-container {
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+  padding: 32px
+}
+.elem-container {
+  display: block;
+  margin: 12px;
+}
+.margin-bottom-container {
+  margin: 0 0 16px 0;
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .main-container {
+    padding: 16px;
+  }
+  .medium-container {
+    padding: 16px 0 0 0;
+  }
+  .header-container {
+    padding: 0;
+  }
+  .elem-container {
+    margin: 4px;
+  }
+  .margin-bottom-container {
+    margin: 0 0 12px 0;
+  }
+}

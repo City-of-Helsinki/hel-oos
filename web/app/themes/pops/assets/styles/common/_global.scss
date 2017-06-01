@@ -52,3 +52,22 @@ img {
     border: 0;
   }
 }
+
+a {
+  color: white !important;
+  &:link, &:visited, &:hover, &:active {
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  h1 {
+    font-size: $font-size-h3;
+  }
+}
+
+$pops-home: #00D7A7;
+$pops-blog: #F5A3C7;
+$pops-about: #9FC9EB;
+$pops-download: #DEDFE1;
