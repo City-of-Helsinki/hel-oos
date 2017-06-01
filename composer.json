@@ -36,6 +36,18 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ACF/ACFPro",
+        "version": "5.3.3",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU4OTJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTEyIDA3OjM4OjM4"
+        }
+      }
     }
   ],
   "require": {
@@ -45,7 +57,8 @@
     "johnpbloch/wordpress": "4.7.5",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/responsive-video-embed": "^0.2.2"
+    "wpackagist-plugin/responsive-video-embed": "^0.2.2",
+    "ACF/ACFPro": "*"
   },
   "require-dev": {
     "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",
@@ -65,7 +78,8 @@
   "extra": {
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": [
-        "type:wordpress-muplugin"
+        "type:wordpress-muplugin",
+        "AFC/ACFPro"
       ],
       "web/app/plugins/{$name}/": [
         "type:wordpress-plugin"
