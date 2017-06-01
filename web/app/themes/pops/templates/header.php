@@ -37,12 +37,3 @@
 				<?php pops_main_menu(); ?>
 			</div>
 		</section>
-
-		<?php if ( get_the_title() ) {
-			if ( get_the_title() === 'Etusivu' ) { get_template_part( 'partials/components/home_header' ); }
-			elseif ( get_the_title() === 'Hanke ja tekijät' ) { get_template_part( 'partials/components/about_header' ); }
-			elseif ( get_the_title() === 'Lataukset' ) { get_template_part( 'partials/components/download_header' ); }
-		} else {
-			get_template_part( 'partials/components/blog_header' );
-		} ?>
-	</header>

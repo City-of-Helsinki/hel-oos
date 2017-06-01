@@ -1,0 +1,15 @@
+main.home {
+  @extend .container-fluid;
+  @extend .main-container;
+}
+.home {
+  &__links {
+    color: #0072C6 !important;
+    @include make-row();
+    @extend .header-container;
+  }
+  &__videos {
+    @include make-row();
+    @extend .medium-container;
+  }
+}

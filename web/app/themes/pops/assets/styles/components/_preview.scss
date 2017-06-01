@@ -1,0 +1,13 @@
+.preview {
+  @include make-xs-column(12);
+  @include make-sm-column(6);
+  @extend .medium-container;
+  &__video {
+    width: 100%;
+  }
+  &__text {
+    background-color: white;
+    @extend .medium-container;
+    border-bottom: 4px solid #eee;
+  }
+}

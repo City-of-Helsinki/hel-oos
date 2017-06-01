@@ -15,10 +15,12 @@
 @import "components/comments";
 @import "components/containers";
 @import "components/forms";
+@import "components/preview";
 @import "components/tinymce";
 @import "components/pagination";
 
 // Layouts & pages
 @import "layouts/header";
+@import "layouts/home";
 @import "layouts/sidebar";
 @import "layouts/footer";

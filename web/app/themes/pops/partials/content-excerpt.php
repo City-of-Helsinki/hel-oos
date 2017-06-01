@@ -9,7 +9,10 @@
 
 ?>
 
-<article>
-	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	<?php the_excerpt(); ?>
+<article class="preview">
+	<section class="preview__video"><?php the_field( 'video' ) ?></section>
+	<section class="preview__text">
+		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<?php the_excerpt(); ?>
+	</section>
 </article>

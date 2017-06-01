@@ -10,7 +10,14 @@ get_header();
 
 ?>
 
-<?php do_action( 'pops_before_page' ); ?>
+
+	<section class="row main-container text-center">
+			<div class="header-container">
+				<h1 class="margin-bottom-container"><?php the_field( 'header', get_option('page_for_posts') ); ?></h1>
+				<p class="header__ingress"> <?= wp_strip_all_tags( apply_filters( 'the_content', get_post_field( 'post_content', get_option( 'page_for_posts' ) ) ) ); ?> </p>
+			</div>
+		</section>
+</header>
 
 <main class="about">
   <svg preserveAspectRatio="xMinYMax meet" fill="#ffffff" width="100%" height="96" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

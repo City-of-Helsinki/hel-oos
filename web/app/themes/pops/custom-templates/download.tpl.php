@@ -11,7 +11,17 @@
 
 get_header();
 
- ?>
+?>
+
+  <section class="row main-container text-center">
+    <div class="header-container">
+      <h1 class="margin-bottom-container"><?= get_field( 'header' ); ?></h1>
+      <?php while ( have_posts() ) : the_post(); ?>
+				<p class="header__ingress"> <?= get_the_content(); ?> </p>
+			<?php endwhile; ?>
+    </div>
+  </section>
+</header>
 
  <main class="download">
   <svg preserveAspectRatio="xMinYMax meet" fill="#ffffff" width="100%" height="96" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
