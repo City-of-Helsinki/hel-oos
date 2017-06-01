@@ -12,16 +12,17 @@
     .about-page & {
       background-color: $pops-about;
     }
-    .downloads & {
+    .download-page & {
       background-color: $pops-download;
     }
   }
 
   &__logo {
     @include make-xs-column(12);
-    @include make-sm-column(3);
+    @include make-sm-column(3, 0);
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 12px;
 
     @media all and (min-width: $screen-sm-min) {
       text-align: left;
@@ -29,33 +30,29 @@
   }
   &__menu {
     @include make-xs-column(12);
-    @include make-sm-column(9);
+    @include make-sm-column(9, 0);
     text-align: center;
     .menu__item {
       list-style-type: none;
       display: inline-block;
-      padding-left: rem-calc(18);
-      padding-right: rem-calc(18);
-      &:first-child {
-        padding-left: 0;
-      }
-      &:last-child {
-        padding-right: 0;
-      }
       .menu__link {
+        @extend .elem-container;
         opacity: .9;
+        padding-bottom: 12px;
         &:hover {
           opacity: 1;
         }
-        &:active {
-          border-bottom: 1px solid white;
-        }
       }
     }
-
     @media all and (min-width: $screen-sm-min) {
       text-align: right;
-      font-size: 24px;
+      font-size: $font-size-large;
+    }
+  }
+  &__ingress {
+    font-size: $font-size-h3;
+    @media all and (max-width: $screen-xs-max) {
+      font-size: $font-size-h4;
     }
   }
 }

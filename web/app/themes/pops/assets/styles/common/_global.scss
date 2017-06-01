@@ -54,7 +54,17 @@ img {
 }
 
 a {
-  color: inherit;
+  color: white !important;
+  &:link, &:visited, &:hover, &:active {
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  h1 {
+    font-size: $font-size-h3;
+  }
 }
 
 $pops-home: #00D7A7;
