@@ -1,0 +1,25 @@
+.footer {
+  @extend .container-fluid;
+  color: white !important;
+  background-color: $brand-info;
+  &__menu {
+    .menu__item {
+      list-style-type: none;
+      display: inline-block;
+      .menu__link {
+        @extend .elem-container;
+        opacity: .9;
+        padding-bottom: 12px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    @media all and (min-width: $screen-sm-min) {
+      font-size: $font-size-large;
+    }
+  }
+  .main-container {
+    display: inline-block;
+  }
+}

@@ -25,7 +25,6 @@ get_header();
   </svg>
 
 	<section>
-		<h1><?php echo get_the_archive_title(); ?></h1>
 		<?php
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 			get_template_part( 'partials/content', 'excerpt' );

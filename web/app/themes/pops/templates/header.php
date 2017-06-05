@@ -33,7 +33,7 @@
 			<div class="header__logo">
 				<h3 class="elem-container">POPS</h3>
 			</div>
-			<div class="header__menu">
+			<nav class="header__menu">
 				<?php pops_main_menu(); ?>
-			</div>
+			</nav>
 		</section>

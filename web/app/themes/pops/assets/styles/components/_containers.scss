@@ -2,7 +2,7 @@
   padding: 48px 32px;
 }
 .medium-container {
-  padding: 32px;
+  padding: 32px !important;
 }
 .header-container {
   display: block;
@@ -17,13 +17,16 @@
 .margin-bottom-container {
   margin: 0 0 16px 0;
 }
+.preview-container {
+  padding: 32px !important;
+}
 
 @media all and (max-width: $screen-xs-max) {
   .main-container {
     padding: 16px;
   }
   .medium-container {
-    padding: 16px 0 0 0;
+    padding: 16px 0 0 0 !important;
   }
   .header-container {
     padding: 0;
@@ -33,5 +36,8 @@
   }
   .margin-bottom-container {
     margin: 0 0 12px 0;
+  }
+  .preview-container {
+    padding: 12px !important;
   }
 }

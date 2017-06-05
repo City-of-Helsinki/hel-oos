@@ -4,12 +4,16 @@ main.home {
 }
 .home {
   &__links {
-    color: #0072C6 !important;
+    color: $brand-info;
     @include make-row();
     @extend .header-container;
   }
   &__videos {
     @include make-row();
     @extend .medium-container;
+  }
+  &__bottom {
+    @include make-row();
+    text-align: center;
   }
 }

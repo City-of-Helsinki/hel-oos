@@ -64,6 +64,12 @@ $recent_posts = new WP_Query( $args );
       get_template_part( 'partials/content', 'excerpt' );
     endwhile;  wp_reset_postdata(); endif; ?>
   </section>
+  <section class="home__bottom">
+    <a class="button button--section-link center-block" href="blog-page">
+      <span>Kaikki artikkelit</span>
+      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+    </a>
+  </section>
 </main>
 
 <?php get_footer(); ?>
