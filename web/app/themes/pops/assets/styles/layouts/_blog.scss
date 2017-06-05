@@ -2,8 +2,20 @@
   &__item {
     @extend .container-fluid;
     @extend .main-container;
+    position: relative;
+    top: -210px;
   }
   &__video {
     @include make-row();
+  }
+  &__text {
+    @include make-row();
+    @extend .padding-top-container;
+  }
+
+  @media all and (max-width: $screen-xs-max) {
+    &__item {
+      position: static;
+    }
   }
 }

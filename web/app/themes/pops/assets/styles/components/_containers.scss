@@ -1,7 +1,7 @@
 .main-container {
   padding: 48px 32px;
 }
-.medium-container {
+.medium-container, .preview-container {
   padding: 32px !important;
 }
 .header-container {
@@ -14,11 +14,16 @@
   display: block;
   margin: 12px;
 }
+.padding-top-container {
+  padding: 16px 0 0 0;
+}
 .margin-bottom-container {
   margin: 0 0 16px 0;
 }
-.preview-container {
-  padding: 32px !important;
+.content-container {
+  padding: 32px;
+  max-width: 800px;
+  margin: auto;
 }
 
 @media all and (max-width: $screen-xs-max) {
@@ -39,5 +44,8 @@
   }
   .preview-container {
     padding: 12px !important;
+  }
+  .content-container {
+    padding: 15px;
   }
 }

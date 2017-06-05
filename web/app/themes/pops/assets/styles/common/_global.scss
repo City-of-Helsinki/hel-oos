@@ -76,9 +76,9 @@ $pops-about: #9FC9EB;
 $pops-download: #DEDFE1;
 
 .svg--bottom {
-    display: block;
-    transform: rotate(180deg);
-  }
+  display: block;
+  transform: rotate(180deg);
+}
 
 @media all and (max-width: $screen-xs-max) {
   h1, h2 {

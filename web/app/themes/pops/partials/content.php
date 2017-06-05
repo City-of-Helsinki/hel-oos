@@ -23,6 +23,12 @@
 </svg>
 
 <article class="blog__item text-center">
-	<section class="blog__video"><?php the_field( 'video' ) ?></section>
-	<?php the_content(); ?>
+	<div class="content-container">
+		<section class="blog__video margin-bottom-container"><?php the_field( 'video' ) ?></section>
+		<section class="blog__text">
+			<?php the_content(); ?>
+		</section>
+	</div>
+
+
 </article>
