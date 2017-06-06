@@ -10,8 +10,13 @@
     font-size: $font-size-large;
   }
   &__contact {
-    &--main {
+    &--main, &--other {
       @extend .content-container;
+      text-align: center;
+      .contact-item {
+        @include inline-block-item( 1 / 4 * 100% );
+        @extend .about-container;
+      }
     }
   }
   &__images {

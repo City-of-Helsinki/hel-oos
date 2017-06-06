@@ -62,7 +62,7 @@ $other_contacts = count( get_field( 'other_contact_repeater' ) );
     <?php if ( have_rows( 'other_contact_repeater' ) ) : ?>
       <section class="about__contact--other">
         <?php while ( have_rows( 'other_contact_repeater' ) ) : the_row(); ?>
-          <div class="col-xs-12 col-sm-<?= 12 / $main_contacts ?> about-container">
+          <div class="contact-item">
             <h5><?= get_sub_field( 'name' ) ?></h5>
             <span class="text-muted"><?= get_sub_field( 'title' ) ?></span>
           </div>

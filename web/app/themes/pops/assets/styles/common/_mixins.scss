@@ -18,3 +18,13 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+@mixin inline-block-item($width) {
+  display: inline-block;
+  width: $width;
+  text-align: center;
+  margin: auto -4px;
+  @media all and (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+}
