@@ -1,0 +1,21 @@
+.about {
+  @extend .container-fluid;
+  @extend .main-container;
+  &__content {
+    @include make-row();
+  }
+  &__text {
+    @extend .content-container;
+    line-height: 32px;
+    font-size: $font-size-large;
+  }
+  &__contact {
+    &--main {
+      @extend .content-container;
+    }
+  }
+  &__images {
+    @include make-row();
+    @extend .header-container;
+  }
+}

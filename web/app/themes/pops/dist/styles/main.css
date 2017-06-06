@@ -2042,6 +2042,7 @@ pre code {
 }
 
 .container-fluid,
+.about,
 .blog__item,
 .header,
 main.home,
@@ -2053,11 +2054,13 @@ main.home,
 }
 
 .container-fluid:before,
+.about:before,
 .blog__item:before,
 .header:before,
 main.home:before,
 .footer:before,
 .container-fluid:after,
+.about:after,
 .blog__item:after,
 .header:after,
 main.home:after,
@@ -2067,6 +2070,7 @@ main.home:after,
 }
 
 .container-fluid:after,
+.about:after,
 .blog__item:after,
 .header:after,
 main.home:after,
@@ -6352,11 +6356,13 @@ tbody.collapse.in {
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
+.about > .navbar-header,
 .blog__item > .navbar-header,
 .header > .navbar-header,
 main.home > .navbar-header,
 .footer > .navbar-header,
 .container-fluid > .navbar-collapse,
+.about > .navbar-collapse,
 .blog__item > .navbar-collapse,
 .header > .navbar-collapse,
 main.home > .navbar-collapse,
@@ -6369,11 +6375,13 @@ main.home > .navbar-collapse,
   .container > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
+  .about > .navbar-header,
   .blog__item > .navbar-header,
   .header > .navbar-header,
   main.home > .navbar-header,
   .footer > .navbar-header,
   .container-fluid > .navbar-collapse,
+  .about > .navbar-collapse,
   .blog__item > .navbar-collapse,
   .header > .navbar-collapse,
   main.home > .navbar-collapse,
@@ -6440,6 +6448,7 @@ main.home > .navbar-collapse,
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand,
+  .navbar > .about .navbar-brand,
   .navbar > .blog__item .navbar-brand,
   .navbar > .header .navbar-brand,
   .navbar > main.home .navbar-brand,
@@ -7354,6 +7363,7 @@ a.badge:focus {
 
 .container .jumbotron,
 .container-fluid .jumbotron,
+.about .jumbotron,
 .blog__item .jumbotron,
 .header .jumbotron,
 main.home .jumbotron,
@@ -7375,6 +7385,7 @@ main.home .jumbotron,
 
   .container .jumbotron,
   .container-fluid .jumbotron,
+  .about .jumbotron,
   .blog__item .jumbotron,
   .header .jumbotron,
   main.home .jumbotron,
@@ -12592,6 +12603,11 @@ body {
   background-color: #F5F5F5;
 }
 
+.about-page,
+.download-page {
+  background-color: #FFF !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -12753,6 +12769,7 @@ figure {
 }
 
 .main-container,
+.about,
 .blog__item,
 main.home {
   padding: 48px 32px;
@@ -12767,6 +12784,7 @@ main.home {
 }
 
 .header-container,
+.about__images,
 .home__links {
   display: block;
   max-width: 1000px;
@@ -12790,14 +12808,34 @@ main.home {
   margin: 0 0 16px 0;
 }
 
-.content-container {
+.content-container,
+.about__text,
+.about__contact--main {
   padding: 32px;
   max-width: 800px;
   margin: auto;
 }
 
+.about-container {
+  padding: 32px !important;
+  text-align: center;
+  font-weight: 500;
+}
+
+.about-container > * {
+  display: block;
+  line-height: 32px;
+  margin: 0 !important;
+}
+
+.about-container > a {
+  color: #0072C6;
+  font-size: 18px;
+}
+
 @media all and (max-width: 767px) {
   .main-container,
+  .about,
   .blog__item,
   main.home {
     padding: 16px;
@@ -12809,6 +12847,7 @@ main.home {
   }
 
   .header-container,
+  .about__images,
   .home__links {
     padding: 0;
   }
@@ -12829,8 +12868,14 @@ main.home {
     padding: 12px !important;
   }
 
-  .content-container {
+  .content-container,
+  .about__text,
+  .about__contact--main {
     padding: 15px;
+  }
+
+  .about-container {
+    padding: 8px !important;
   }
 }
 
@@ -12930,6 +12975,41 @@ body#tinymce {
   text-decoration: none;
 }
 
+.about__content {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.about__content:before,
+.about__content:after {
+  content: " ";
+  display: table;
+}
+
+.about__content:after {
+  clear: both;
+}
+
+.about__text {
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.about__images {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.about__images:before,
+.about__images:after {
+  content: " ";
+  display: table;
+}
+
+.about__images:after {
+  clear: both;
+}
+
 .blog__item {
   position: relative;
   top: -210px;
@@ -12953,6 +13033,7 @@ body#tinymce {
 .blog__text {
   margin-left: -15px;
   margin-right: -15px;
+  text-align: initial;
 }
 
 .blog__text:before,
@@ -13128,6 +13209,10 @@ body#tinymce {
   background-color: #0072C6;
 }
 
+.footer__menu {
+  padding: 16px 0 32px;
+}
+
 .footer__menu .menu__item {
   list-style-type: none;
   display: inline-block;
@@ -13149,6 +13234,7 @@ body#tinymce {
 }
 
 .footer .main-container,
+.footer .about,
 .footer .blog__item,
 .footer main.home {
   display: inline-block;

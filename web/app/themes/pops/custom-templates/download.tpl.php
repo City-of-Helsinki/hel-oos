@@ -16,9 +16,7 @@ get_header();
   <section class="row main-container text-center">
     <div class="header-container">
       <h1 class="margin-bottom-container"><?= get_field( 'header' ); ?></h1>
-      <?php while ( have_posts() ) : the_post(); ?>
-				<p class="header__ingress"> <?= get_the_content(); ?> </p>
-			<?php endwhile; ?>
+       <p class="header__ingress"> <?= wp_strip_all_tags( get_field( 'subheader' ) ); ?> </p>
     </div>
   </section>
 </header>

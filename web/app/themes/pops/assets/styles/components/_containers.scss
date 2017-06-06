@@ -25,6 +25,21 @@
   max-width: 800px;
   margin: auto;
 }
+.about-container {
+  padding: 32px !important;
+  text-align: center;
+  font-weight: 500;
+  & > * {
+    display: block;
+    line-height: 32px;
+    margin: 0 !important;
+  }
+  & > a {
+    color: $brand-info;
+    font-size: $font-size-h5
+  }
+
+}
 
 @media all and (max-width: $screen-xs-max) {
   .main-container {
@@ -48,4 +63,7 @@
   .content-container {
     padding: 15px;
   }
+  .about-container {
+    padding: 8px !important;
+  } 
 }

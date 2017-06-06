@@ -6,7 +6,7 @@ export default {
     const footerMenuLinks = $('.footer__menu .menu__link');
 
     pageTitle === 'POPS'
-      ? firstActive(headerMenuLinks, footerMenuLinks)
+      ? firstOrPostActive(headerMenuLinks.get()[0], footerMenuLinks.get()[0])
       : otherActive(pageTitle, headerMenuLinks, footerMenuLinks);
   },
   finalize() {
@@ -14,18 +14,25 @@ export default {
   },
 };
 
-function firstActive(headerMenuLinks, footerMenuLinks) {
-  $(headerMenuLinks.get()[0]).css('border-bottom', '2px solid white');
-  $(footerMenuLinks.get()[0]).css('border-bottom', '2px solid white');
+function firstOrPostActive(headerMenuLink, footerMenuLink) {
+  $(headerMenuLink).css('border-bottom', '2px solid white');
+  $(footerMenuLink).css('border-bottom', '2px solid white');
 }
 
 function otherActive(pageTitle, headerMenuLinks, footerMenuLinks) {
-  headerMenuLinks
+  const headerLink = headerMenuLinks
     .get()
-    .find(element => pageTitle.includes($(element).html())).style.borderBottom =
-    '2px solid white';
-  footerMenuLinks
+    .find(element => pageTitle.includes($(element).html()));
+
+  const footerLink = footerMenuLinks
     .get()
-    .find(element => pageTitle.includes($(element).html())).style.borderBottom =
-    '2px solid white';
+    .find(element => pageTitle.includes($(element).html()));
+
+  console.log(headerLink, footerLink); //eslint-disable-line
+
+  !!headerLink && $(headerLink).css('borderBottom', '2px solid white');
+  !!footerLink && $(footerLink).css('borderBottom', '2px solid white');
+  !headerLink &&
+    !footerLink &&
+    firstOrPostActive(headerMenuLinks.get()[1], footerMenuLinks.get()[1]);
 }

@@ -26,12 +26,12 @@ function pops_theme() {
  */
 function pops_set_imagesizes() {
     return [
-        //[
-        //    'name'   => 'article_lift',
-        //    'width'  => 360,
-        //    'height' => 200,
-        //    'crop'   => true
-        //]
+        [
+            'name'   => 'about_img',
+            'width'  => 436,
+            'height' => 251,
+            'crop'   => true
+        ]
     ];
 }
 
