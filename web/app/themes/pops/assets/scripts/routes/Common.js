@@ -28,8 +28,6 @@ function otherActive(pageTitle, headerMenuLinks, footerMenuLinks) {
     .get()
     .find(element => pageTitle.includes($(element).html()));
 
-  console.log(headerLink, footerLink); //eslint-disable-line
-
   !!headerLink && $(headerLink).css('borderBottom', '2px solid white');
   !!footerLink && $(footerLink).css('borderBottom', '2px solid white');
   !headerLink &&

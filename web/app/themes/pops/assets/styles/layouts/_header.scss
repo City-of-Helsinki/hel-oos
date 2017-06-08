@@ -38,6 +38,7 @@
     .menu__item {
       list-style-type: none;
       display: inline-block;
+      font-weight: 500;
       .menu__link {
         @extend .elem-container;
         opacity: .9;
@@ -49,7 +50,7 @@
     }
     @media all and (min-width: $screen-sm-min) {
       text-align: right;
-      font-size: $font-size-large;
+      font-size: $jumbotron-font-size;
     }
   }
   &__ingress {

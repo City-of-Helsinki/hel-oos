@@ -12666,6 +12666,21 @@ p,
   margin-top: 0;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-10%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+svg path {
+  transform: translateX(-10%);
+  animation: slideInFromLeft 2s ease 5s normal forwards;
+}
+
 .svg--bottom {
   display: block;
   transform: rotate(180deg);
@@ -12728,8 +12743,9 @@ figure {
   display: inline-block;
   padding: 16px 20px 12px;
   line-height: 32px;
-  font-size: 20px;
+  font-size: 24px;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 .button > * {
@@ -13197,6 +13213,7 @@ body#tinymce {
 .header__menu .menu__item {
   list-style-type: none;
   display: inline-block;
+  font-weight: 500;
 }
 
 .header__menu .menu__item .menu__link {
@@ -13211,7 +13228,7 @@ body#tinymce {
 @media all and (min-width: 768px) {
   .header__menu {
     text-align: right;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
