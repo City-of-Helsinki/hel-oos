@@ -31,7 +31,7 @@
 	<header class="header">
 		<section class="row medium-container">
 			<div class="header__logo">
-				<h3 class="elem-container">OOPS</h3>
+				<h3 class="elem-container">OOS</h3>
 			</div>
 			<nav class="header__menu">
 				<?php pops_main_menu(); ?>
