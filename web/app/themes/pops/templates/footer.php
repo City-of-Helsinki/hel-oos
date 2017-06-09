@@ -16,6 +16,7 @@ wp_footer();
 
 <style>
   .wave--footer {
+    width: 100%;
     background-color: #0072C6;
     mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
     -webkit-mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
@@ -28,7 +29,7 @@ wp_footer();
   }
 </style>
 
-<div class="row wave--footer"></div>
+<div class="wave--footer"></div>
 
 <footer class="footer text-center">
     <div class="row main-container">

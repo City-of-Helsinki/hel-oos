@@ -1,6 +1,7 @@
 main.home {
   @extend .container-fluid;
   @extend .main-container;
+  max-width: 1280px;
 }
 .home {
   &__links {

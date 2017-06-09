@@ -34,7 +34,7 @@ get_header();
 
 <div class="col-xs-12 wave"></div>
 
-<main class="blog">
+<main class="blog-archive">
 	<section class="container-fluid">
 		<?php
 		if ( have_posts() ) : while ( have_posts() ) : the_post();

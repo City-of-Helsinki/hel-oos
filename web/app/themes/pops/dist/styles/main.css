@@ -2043,6 +2043,8 @@ pre code {
 
 .container-fluid,
 .about,
+.blog-archive,
+.blog__item,
 .download,
 .header,
 main.home,
@@ -2055,12 +2057,16 @@ main.home,
 
 .container-fluid:before,
 .about:before,
+.blog-archive:before,
+.blog__item:before,
 .download:before,
 .header:before,
 main.home:before,
 .footer:before,
 .container-fluid:after,
 .about:after,
+.blog-archive:after,
+.blog__item:after,
 .download:after,
 .header:after,
 main.home:after,
@@ -2071,6 +2077,8 @@ main.home:after,
 
 .container-fluid:after,
 .about:after,
+.blog-archive:after,
+.blog__item:after,
 .download:after,
 .header:after,
 main.home:after,
@@ -6357,12 +6365,16 @@ tbody.collapse.in {
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
 .about > .navbar-header,
+.blog-archive > .navbar-header,
+.blog__item > .navbar-header,
 .download > .navbar-header,
 .header > .navbar-header,
 main.home > .navbar-header,
 .footer > .navbar-header,
 .container-fluid > .navbar-collapse,
 .about > .navbar-collapse,
+.blog-archive > .navbar-collapse,
+.blog__item > .navbar-collapse,
 .download > .navbar-collapse,
 .header > .navbar-collapse,
 main.home > .navbar-collapse,
@@ -6376,12 +6388,16 @@ main.home > .navbar-collapse,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
   .about > .navbar-header,
+  .blog-archive > .navbar-header,
+  .blog__item > .navbar-header,
   .download > .navbar-header,
   .header > .navbar-header,
   main.home > .navbar-header,
   .footer > .navbar-header,
   .container-fluid > .navbar-collapse,
   .about > .navbar-collapse,
+  .blog-archive > .navbar-collapse,
+  .blog__item > .navbar-collapse,
   .download > .navbar-collapse,
   .header > .navbar-collapse,
   main.home > .navbar-collapse,
@@ -6449,6 +6465,8 @@ main.home > .navbar-collapse,
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand,
   .navbar > .about .navbar-brand,
+  .navbar > .blog-archive .navbar-brand,
+  .navbar > .blog__item .navbar-brand,
   .navbar > .download .navbar-brand,
   .navbar > .header .navbar-brand,
   .navbar > main.home .navbar-brand,
@@ -7364,6 +7382,8 @@ a.badge:focus {
 .container .jumbotron,
 .container-fluid .jumbotron,
 .about .jumbotron,
+.blog-archive .jumbotron,
+.blog__item .jumbotron,
 .download .jumbotron,
 .header .jumbotron,
 main.home .jumbotron,
@@ -7386,6 +7406,8 @@ main.home .jumbotron,
   .container .jumbotron,
   .container-fluid .jumbotron,
   .about .jumbotron,
+  .blog-archive .jumbotron,
+  .blog__item .jumbotron,
   .download .jumbotron,
   .header .jumbotron,
   main.home .jumbotron,
@@ -12782,11 +12804,11 @@ figure {
 
 .main-container,
 .about,
+.blog-archive,
 .blog__item,
 .download,
 .download__item,
 main.home {
-  max-width: 1280px;
   padding: 48px 32px;
 }
 
@@ -12826,8 +12848,7 @@ main.home {
 .content-container,
 .about__text,
 .about__contact--main,
-.about__contact--other,
-.download__items {
+.about__contact--other {
   padding: 32px;
   max-width: 800px;
   margin: auto;
@@ -12859,6 +12880,7 @@ main.home {
 @media all and (max-width: 767px) {
   .main-container,
   .about,
+  .blog-archive,
   .blog__item,
   .download,
   .download__item,
@@ -12896,8 +12918,7 @@ main.home {
   .content-container,
   .about__text,
   .about__contact--main,
-  .about__contact--other,
-  .download__items {
+  .about__contact--other {
     padding: 15px;
   }
 
@@ -13004,6 +13025,10 @@ body#tinymce {
   text-decoration: none;
 }
 
+.about {
+  max-width: 1280px;
+}
+
 .about__content {
   margin-left: -15px;
   margin-right: -15px;
@@ -13059,9 +13084,14 @@ body#tinymce {
   clear: both;
 }
 
+.blog-archive {
+  max-width: 1280px;
+}
+
 .blog__item {
+  max-width: 1280px;
   position: relative;
-  top: -210px;
+  top: -120px;
 }
 
 .blog__video {
@@ -13079,10 +13109,14 @@ body#tinymce {
   clear: both;
 }
 
+.blog__video .embed-responsive {
+  min-width: 100%;
+}
+
 .blog__text {
   margin-left: -15px;
   margin-right: -15px;
-  text-align: initial;
+  text-align: center;
 }
 
 .blog__text:before,
@@ -13097,8 +13131,16 @@ body#tinymce {
 
 @media all and (max-width: 767px) {
   .blog__item {
-    position: static;
+    top: 0px;
   }
+
+  .blog__text {
+    text-align: initial;
+  }
+}
+
+.download {
+  max-width: 1280px;
 }
 
 .download__items {
@@ -13228,6 +13270,10 @@ body#tinymce {
   }
 }
 
+main.home {
+  max-width: 1280px;
+}
+
 .home__links {
   color: #0072C6;
   margin-left: -15px;
@@ -13306,6 +13352,7 @@ body#tinymce {
 
 .footer .main-container,
 .footer .about,
+.footer .blog-archive,
 .footer .blog__item,
 .footer .download,
 .footer .download__item,

@@ -1,6 +1,7 @@
 .about {
   @extend .container-fluid;
   @extend .main-container;
+  max-width: 1280px;
   &__content {
     @include make-row();
   }
