@@ -80,22 +80,18 @@ $pops-about: #9FC9EB;
 $pops-download: #DEDFE1;
 
 @keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-10%);
+  from {
+    mask-position: left;
+    -webkit-mask-position: left;
   }
-  100% {
-    transform: translateX(0);
+  to {
+    mask-position: center;
+    -webkit-mask-position: center;
   }
 }
 
-svg path {
-  transform: translateX(-10%);
-  animation: slideInFromLeft 2s ease 5s normal forwards;
-}
-
-.svg--bottom {
-  display: block;
-  transform: rotate(180deg);
+.wave {
+  animation: slideInFromLeft 1s ease 0s normal forwards;
 }
 
 @media all and (max-width: $screen-xs-max) {

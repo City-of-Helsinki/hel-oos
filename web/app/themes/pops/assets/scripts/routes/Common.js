@@ -5,7 +5,7 @@ export default {
     const headerMenuLinks = $('.header__menu .menu__link');
     const footerMenuLinks = $('.footer__menu .menu__link');
 
-    pageTitle === 'POPS'
+    pageTitle === 'OOS'
       ? firstOrPostActive(headerMenuLinks.get()[0], footerMenuLinks.get()[0])
       : otherActive(pageTitle, headerMenuLinks, footerMenuLinks);
   },

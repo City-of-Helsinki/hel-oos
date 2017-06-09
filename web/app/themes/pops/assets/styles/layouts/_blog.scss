@@ -1,6 +1,6 @@
 .blog {
   &__item {
-    @extend .container-fluid;
+    // @extend .container-fluid;
     @extend .main-container;
     position: relative;
     top: -210px;

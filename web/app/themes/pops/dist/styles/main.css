@@ -2043,7 +2043,6 @@ pre code {
 
 .container-fluid,
 .about,
-.blog__item,
 .download,
 .header,
 main.home,
@@ -2056,14 +2055,12 @@ main.home,
 
 .container-fluid:before,
 .about:before,
-.blog__item:before,
 .download:before,
 .header:before,
 main.home:before,
 .footer:before,
 .container-fluid:after,
 .about:after,
-.blog__item:after,
 .download:after,
 .header:after,
 main.home:after,
@@ -2074,7 +2071,6 @@ main.home:after,
 
 .container-fluid:after,
 .about:after,
-.blog__item:after,
 .download:after,
 .header:after,
 main.home:after,
@@ -6361,14 +6357,12 @@ tbody.collapse.in {
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
 .about > .navbar-header,
-.blog__item > .navbar-header,
 .download > .navbar-header,
 .header > .navbar-header,
 main.home > .navbar-header,
 .footer > .navbar-header,
 .container-fluid > .navbar-collapse,
 .about > .navbar-collapse,
-.blog__item > .navbar-collapse,
 .download > .navbar-collapse,
 .header > .navbar-collapse,
 main.home > .navbar-collapse,
@@ -6382,14 +6376,12 @@ main.home > .navbar-collapse,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
   .about > .navbar-header,
-  .blog__item > .navbar-header,
   .download > .navbar-header,
   .header > .navbar-header,
   main.home > .navbar-header,
   .footer > .navbar-header,
   .container-fluid > .navbar-collapse,
   .about > .navbar-collapse,
-  .blog__item > .navbar-collapse,
   .download > .navbar-collapse,
   .header > .navbar-collapse,
   main.home > .navbar-collapse,
@@ -6457,7 +6449,6 @@ main.home > .navbar-collapse,
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand,
   .navbar > .about .navbar-brand,
-  .navbar > .blog__item .navbar-brand,
   .navbar > .download .navbar-brand,
   .navbar > .header .navbar-brand,
   .navbar > main.home .navbar-brand,
@@ -7373,7 +7364,6 @@ a.badge:focus {
 .container .jumbotron,
 .container-fluid .jumbotron,
 .about .jumbotron,
-.blog__item .jumbotron,
 .download .jumbotron,
 .header .jumbotron,
 main.home .jumbotron,
@@ -7396,7 +7386,6 @@ main.home .jumbotron,
   .container .jumbotron,
   .container-fluid .jumbotron,
   .about .jumbotron,
-  .blog__item .jumbotron,
   .download .jumbotron,
   .header .jumbotron,
   main.home .jumbotron,
@@ -12667,23 +12656,19 @@ p,
 }
 
 @keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-10%);
+  from {
+    mask-position: left;
+    -webkit-mask-position: left;
   }
 
-  100% {
-    transform: translateX(0);
+  to {
+    mask-position: center;
+    -webkit-mask-position: center;
   }
 }
 
-svg path {
-  transform: translateX(-10%);
-  animation: slideInFromLeft 2s ease 5s normal forwards;
-}
-
-.svg--bottom {
-  display: block;
-  transform: rotate(180deg);
+.wave {
+  animation: slideInFromLeft 1s ease 0s normal forwards;
 }
 
 @media all and (max-width: 767px) {
@@ -12801,6 +12786,7 @@ figure {
 .download,
 .download__item,
 main.home {
+  max-width: 1280px;
   padding: 48px 32px;
 }
 

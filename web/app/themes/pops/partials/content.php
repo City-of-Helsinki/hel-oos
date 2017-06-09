@@ -7,6 +7,8 @@
  *
  */
 
+get_header();
+
 ?>
 
 	<section class="row main-container text-center">
