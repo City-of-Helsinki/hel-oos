@@ -32,7 +32,7 @@ $recent_posts = new WP_Query( $args );
       <h1 class="margin-bottom-container"><?= get_field( 'header' ); ?></h1>
       <p class="header__ingress"> <?= wp_strip_all_tags( get_field( 'subheader' ) ); ?> </p>
       <div class="header__links">
-        <a href="#" class="button button--header-link" data-toggle="modal" data-target="#videoModal">
+        <a href="#" target="_blank" class="button button--header-link" data-toggle="modal" data-target="#videoModal">
           <i class="fa fa-play" aria-hidden="true"></i>
           <span>Katso esittelyvideo</span>
         </a><!--
