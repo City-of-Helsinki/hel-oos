@@ -17,4 +17,10 @@ main.home {
     @include make-row();
     text-align: center;
   }
+  .modal-dialog {
+    width: auto;
+    @extend .content-container;
+    top: 50%;
+    transform: translateY(-50%) !important;
+  }
 }

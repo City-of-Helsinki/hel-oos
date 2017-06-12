@@ -22,14 +22,14 @@ wp_footer();
 <div class="wave--footer"></div>
 
 <footer class="footer text-center">
-    <div class="row main-container">
+    <div class="row content-container">
       <div class="main-container">
         <img src="<?php echo UTILS()->get_image_uri(); ?>/helsinki.svg" style="height: 80px;" />
-      </div>
-      <div class="main-container">
+      </div><!--
+    --><div class="main-container">
         <img src="<?php echo UTILS()->get_image_uri(); ?>/oph.svg" style="height: 160px;" />
-      </div>
-      <div class="main-container">
+      </div><!--
+    --><div class="main-container">
         <img src="<?php echo UTILS()->get_image_uri(); ?>/helsinki.svg" style="height: 80px;" />
       </div>
     </div>

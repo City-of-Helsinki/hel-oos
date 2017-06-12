@@ -3,7 +3,7 @@
   color: white !important;
   background-color: $brand-info;
   &__menu {
-    padding: 16px 0 32px;
+    padding-top: 16px;
     .menu__item {
       list-style-type: none;
       display: inline-block;
@@ -17,10 +17,15 @@
       }
     }
     @media all and (min-width: $screen-sm-min) {
-      font-size: $font-size-large;
+      font-size: $jumbotron-font-size;
     }
   }
   .main-container {
     display: inline-block;
+    width: 33%;
+    @media all and (max-width: $screen-xs-max) {
+      display: block;
+      width: 100%;
+    }
   }
 }

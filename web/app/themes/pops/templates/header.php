@@ -31,7 +31,8 @@
 	<header class="header">
 		<section class="row medium-container">
 			<div class="header__logo">
-				<h3 class="elem-container">OOS</h3>
+				<h3>OOS</h3>
+				<a href="https://www.youtube.com/watch?v=IEfQ_9DIItI&list=PL2w4TvBbdQ3sMABf317ExCob_v6rW2-4s"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 			</div>
 			<nav class="header__menu">
 				<?php pops_main_menu(); ?>
