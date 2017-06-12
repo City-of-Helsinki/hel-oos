@@ -8,6 +8,8 @@ export default {
     pageTitle === 'OOS'
       ? firstOrPostActive(headerMenuLinks.get()[0], footerMenuLinks.get()[0])
       : otherActive(pageTitle, headerMenuLinks, footerMenuLinks);
+
+    $('preview').matchHeight();
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

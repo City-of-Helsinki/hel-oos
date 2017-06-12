@@ -2,6 +2,7 @@
 import 'jquery';
 import 'bootstrap-sass/assets/javascripts/bootstrap';
 import 'fastclick';
+import 'jquery-match-height';
 
 // import local dependencies
 import Router from './util/router';
