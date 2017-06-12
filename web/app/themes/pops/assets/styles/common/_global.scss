@@ -25,6 +25,7 @@ html {
 body {
   min-height: 100%;
   background-color: #F5F5F5;
+  overflow-x: hidden;
 }
 
 .about-page, .download-page {
@@ -81,17 +82,17 @@ $pops-download: #DEDFE1;
 
 @keyframes slideInFromLeft {
   from {
-    mask-position: left;
-    -webkit-mask-position: left;
+    transform: translateX(-20%);
+    width: 130%;
   }
   to {
-    mask-position: center;
-    -webkit-mask-position: center;
+    transform: translateX(0%);
+    width: 100%;
   }
 }
 
 .wave {
-  animation: slideInFromLeft 1s ease 0s normal forwards;
+  animation: slideInFromLeft 2s ease 0s normal forwards;
 }
 
 @media all and (max-width: $screen-xs-max) {

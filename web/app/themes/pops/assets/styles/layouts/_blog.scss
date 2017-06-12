@@ -9,7 +9,7 @@
     @extend .main-container;
     max-width: 1280px;
     position: relative;
-    top: -120px;
+    top: -180px;
   }
   &__video {
     @include make-row();

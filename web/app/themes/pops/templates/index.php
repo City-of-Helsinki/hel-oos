@@ -21,13 +21,7 @@ get_header();
 
 <style>
   .wave {
-    background-color: #F5A3C7;
-    mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    -webkit-mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    -ms-mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    mask-position: left;
-    -webkit-mask-position: left;
-    -ms-mask-position: left;
+    background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_blog.svg) repeat-x center;
     height: 40px;
   }
 </style>

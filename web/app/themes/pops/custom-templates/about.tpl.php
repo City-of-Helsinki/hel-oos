@@ -27,13 +27,7 @@ $other_contacts = count( get_field( 'other_contact_repeater' ) );
 
 <style>
   .wave {
-    background-color: #9FC9EB;
-    mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    -webkit-mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    -ms-mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    mask-position: left;
-    -webkit-mask-position: left;
-    -ms-mask-position: left;
+    background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_about.svg) repeat-x center;
     height: 40px;
   }
 </style>

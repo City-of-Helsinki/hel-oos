@@ -25,13 +25,7 @@ $items = count( get_field( 'embed_repeater' ) );
 
 <style>
   .wave {
-    background-color: #DEDFE1;
-    mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    -webkit-mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    -ms-mask-image: url(<?php echo UTILS()->get_image_uri(); ?>/slice.svg);
-    mask-position: left;
-    -webkit-mask-position: left;
-    -ms-mask-position: left;
+    background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_download.svg) repeat-x center;
     height: 40px;
   }
 </style>
