@@ -24,7 +24,7 @@ wp_footer();
 <footer class="footer text-center">
     <div class="row content-container">
       <div class="main-container">
-        <img src="<?php echo UTILS()->get_image_uri(); ?>/helsinki.svg" style="height: 80px;" />
+        <img src="<?php echo UTILS()->get_image_uri(); ?>/oos.png" style="height: 120px;" />
       </div><!--
     --><div class="main-container">
         <img src="<?php echo UTILS()->get_image_uri(); ?>/oph.svg" style="height: 160px;" />

@@ -29,6 +29,7 @@ $other_contacts = count( get_field( 'other_contact_repeater' ) );
   .wave {
     background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_about.svg) repeat-x center;
     height: 40px;
+    width: 100%;
   }
 </style>
 

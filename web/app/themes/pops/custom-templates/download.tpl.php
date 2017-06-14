@@ -27,6 +27,7 @@ $items = count( get_field( 'embed_repeater' ) );
   .wave {
     background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_download.svg) repeat-x center;
     height: 40px;
+    width: 100%;
   }
 </style>
 

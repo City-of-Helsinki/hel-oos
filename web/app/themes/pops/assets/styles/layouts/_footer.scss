@@ -3,7 +3,8 @@
   color: white !important;
   background-color: $brand-info;
   &__menu {
-    padding-top: 16px;
+    @extend .padding-top-container;
+    padding-bottom: 32px;
     .menu__item {
       list-style-type: none;
       display: inline-block;

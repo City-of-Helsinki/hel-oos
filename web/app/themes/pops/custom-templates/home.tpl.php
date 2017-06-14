@@ -49,10 +49,11 @@ $recent_posts = new WP_Query( $args );
   .wave {
     background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_home.svg) repeat-x center;
     height: 40px;
+    width: 100%;
   }
 </style>
 
-<div class="col-xs-12 wave"></div>
+<div class="wave"></div>
 
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

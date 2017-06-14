@@ -23,6 +23,7 @@ get_header();
   .wave {
     background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_blog.svg) repeat-x center;
     height: 40px;
+    width: 100%;
   }
 </style>
 

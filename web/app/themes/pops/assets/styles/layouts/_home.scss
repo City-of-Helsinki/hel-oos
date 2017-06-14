@@ -3,6 +3,7 @@ main.home {
   @extend .main-container;
   max-width: 1280px;
 }
+
 .home {
   &__links {
     color: $brand-info;
@@ -11,7 +12,8 @@ main.home {
   }
   &__videos {
     @include make-row();
-    @extend .medium-container;
+    @extend .main-container;
+    padding-top: 0;
   }
   &__bottom {
     @include make-row();
