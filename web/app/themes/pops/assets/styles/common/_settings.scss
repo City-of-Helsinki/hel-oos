@@ -29,7 +29,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            #757575 !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -43,7 +43,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  'Helsinki Grotesk', Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  'HelsinkiGroteskMedium', Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;

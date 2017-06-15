@@ -1,5 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic);@charset "UTF-8";
 
+/* Webfont: HelsinkiGrotesk-Medium */
+
+@font-face {
+  font-family: 'HelsinkiGroteskMedium';
+  src: url(/app/themes/pops/dist/vendor/HelsinkiGrotesk-Medium.eot);
+  /* IE9 Compat Modes */
+  src: url(/app/themes/pops/dist/vendor/HelsinkiGrotesk-Medium.eot) format("embedded-opentype"), url(/app/themes/pops/dist/vendor/HelsinkiGrotesk-Medium.woff) format("woff"), url(/app/themes/pops/dist/vendor/HelsinkiGrotesk-Medium.ttf) format("truetype"), url(/app/themes/pops/dist/assets/fonts/HelsinkiGrotesk-Medium.svg) format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1406,10 +1419,10 @@ html {
 }
 
 body {
-  font-family: "Helsinki Grotesk", Helvetica, Arial, sans-serif;
+  font-family: "HelsinkiGroteskMedium", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
-  color: #333333;
+  color: #757575;
   background-color: #fff;
 }
 
@@ -4287,7 +4300,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #b5b5b5;
 }
 
 @media (min-width: 768px) {
@@ -7450,7 +7463,7 @@ main.home .jumbotron,
 .thumbnail .caption,
 .wp-caption .caption {
   padding: 9px;
-  color: #333333;
+  color: #757575;
 }
 
 a.thumbnail:hover,
@@ -8676,7 +8689,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helsinki Grotesk", Helvetica, Arial, sans-serif;
+  font-family: "HelsinkiGroteskMedium", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8810,7 +8823,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helsinki Grotesk", Helvetica, Arial, sans-serif;
+  font-family: "HelsinkiGroteskMedium", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
