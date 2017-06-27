@@ -576,7 +576,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/rewrite-rules-inspector.zip?timestamp=1380036205",
+                "url": "https://downloads.wordpress.org/plugin/rewrite-rules-inspector.zip?timestamp=1496932526",
                 "reference": null,
                 "shasum": null
             },
@@ -585,7 +585,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/",
-            "time": "2013-09-24 16:23:25"
+            "time": "2017-06-08 15:35:26"
         },
         {
             "name": "wpackagist-plugin/simply-show-ids",
