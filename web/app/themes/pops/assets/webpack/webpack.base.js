@@ -6,9 +6,14 @@ var config = require('../../package.json').config;
 
 var isProduction = !!((argv.env && argv.env.production) || argv.p);
 var sourceMapQueryStr = !isProduction ? '+sourceMap' : '-sourceMap';
-var publicPath = `/${path.dirname(process.cwd()).split(path.sep).slice(-2).concat(path.basename(process.cwd())).join('/')}/dist/`;
+var publicPath = `/${path
+  .dirname(process.cwd())
+  .split(path.sep)
+  .slice(-2)
+  .concat(path.basename(process.cwd()))
+  .join('/')}/dist/`;
 var entries = {};
-Object.keys(config.entry).forEach(function (id) {
+Object.keys(config.entry).forEach(function(id) {
   entries[id] = config.entry[id];
 });
 
@@ -19,13 +24,13 @@ module.exports = {
     publicPath: publicPath,
     filename: 'scripts/[name].min.js',
     sourceMapFilename: '[name].[hash].js.map',
-    chunkFilename: '[id].chunk.js'
+    chunkFilename: '[id].chunk.js',
   },
   resolve: {
     extensions: ['.js', '.html'],
     alias: {
       src: path.resolve(__dirname, '../'),
-      assets: path.resolve(__dirname, '../assets')
+      assets: path.resolve(__dirname, '../assets'),
     },
   },
   // TODO: FIXME! PLZ!
@@ -46,7 +51,7 @@ module.exports = {
   //   },
   // },
   externals: {
-    jquery: 'jQuery'
+    jquery: 'jQuery',
   },
   module: {
     loaders: [
@@ -54,18 +59,25 @@ module.exports = {
         test: /\.js$/,
         loader: 'eslint',
         include: path.resolve(__dirname, '../'),
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.js$/,
         exclude: [/(node_modules)(?![/|\\](bootstrap|foundation-sites))/],
-        loaders: [{
-          loader: 'babel',
-          query: {
-            presets: [[path.resolve('./node_modules/babel-preset-es2015'), { modules: false }]],
-            cacheDirectory: true,
-          }
-        }]
+        loaders: [
+          {
+            loader: 'babel',
+            query: {
+              presets: [
+                [
+                  path.resolve('./node_modules/babel-preset-es2015'),
+                  { modules: false },
+                ],
+              ],
+              cacheDirectory: true,
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,
@@ -97,15 +109,15 @@ module.exports = {
         loaders: [
           `file?${qs.stringify({
             name: '[path][name].[ext]',
-          })}`
-        ]
+          })}`,
+        ],
       },
       {
         test: /\.(ttf|eot)$/,
         include: path.resolve(__dirname, '../'),
         loader: `file?${qs.stringify({
-          name: 'vendor/[name].[ext]'
-        })}`
+          name: 'vendor/[name].[ext]',
+        })}`,
       },
       {
         test: /\.woff2?$/,
@@ -113,17 +125,17 @@ module.exports = {
         loader: `url?${qs.stringify({
           limit: 10000,
           mimetype: 'application/font-woff',
-          name: 'vendor/[name].[ext]'
-        })}`
+          name: 'vendor/[name].[ext]',
+        })}`,
       },
       {
         test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg)$/,
         include: /node_modules/,
         loader: 'file',
         query: {
-          name: 'vendor/[name].[ext]'
-        }
-      }
-    ]
-  }
+          name: 'vendor/[name].[ext]',
+        },
+      },
+    ],
+  },
 };

@@ -45,10 +45,7 @@ img {
   padding-bottom: 56.25%;
   overflow: hidden;
 
-  embed,
-  iframe,
-  object,
-  video {
+  embed, iframe, object, video {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -93,6 +90,7 @@ $pops-download: #DEDFE1;
 
 .wave {
   animation: slideInFromLeft 2s ease 0s normal forwards;
+  height: 96px;
 }
 
 @media all and (max-width: $screen-xs-max) {

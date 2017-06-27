@@ -13,7 +13,9 @@ main.home {
   &__videos {
     @include make-row();
     @extend .main-container;
-    padding-top: 0;
+    @media all and (min-width: $screen-sm-min) {
+      padding-top: 0;
+    }
   }
   &__bottom {
     @include make-row();

@@ -1,4 +1,4 @@
-.main-container {
+.main-container, .blog-container {
   padding: 48px 32px;
 }
 .medium-container, .preview-container {
@@ -8,7 +8,7 @@
   display: block;
   max-width: 1000px;
   margin: auto !important;
-  padding: 32px
+  padding: 32px;
 }
 .elem-container {
   display: block;
@@ -36,14 +36,16 @@
   }
   & > a {
     color: $brand-info;
-    font-size: $font-size-h5
+    font-size: $font-size-h5;
   }
-
 }
 
 @media all and (max-width: $screen-xs-max) {
   .main-container {
     padding: 16px;
+  }
+  .blog-container {
+    padding: 16px 0;
   }
   .medium-container {
     padding: 16px 0 0 0 !important;
@@ -65,5 +67,5 @@
   }
   .about-container {
     padding: 8px !important;
-  } 
+  }
 }

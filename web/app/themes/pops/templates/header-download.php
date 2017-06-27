@@ -26,7 +26,7 @@
 	?>
 	<!-- ============================================================ -->
 
-	<meta name="theme-color" content="#00D7A7" />
+	<meta name="theme-color" content="#DEDFE1" />
 </head>
 
 <body <?php body_class(); ?>>

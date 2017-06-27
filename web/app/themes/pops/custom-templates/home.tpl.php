@@ -11,26 +11,28 @@
 
 get_header();
 
-do_action( 'pops_before_page' );
+do_action('pops_before_page');
 
 $args = [
-	'posts_per_page'      => 4,
-	'orderby'          => 'post_date',
-	'order'            => 'DESC',
-	'post_type'        => 'post',
-	'post_status'      => 'publish',
-	'suppress_filters' => true
+  'posts_per_page' => 4,
+  'orderby' => 'post_date',
+  'order' => 'DESC',
+  'post_type' => 'post',
+  'post_status' => 'publish',
+  'suppress_filters' => true
 ];
 
-$recent_posts = new WP_Query( $args );
+$recent_posts = new WP_Query($args);
 
 ?>
 
 
   <section class="row main-container text-center">
     <div class="header-container">
-      <h1 class="margin-bottom-container"><?= get_field( 'header' ); ?></h1>
-      <p class="header__ingress"> <?= wp_strip_all_tags( get_field( 'subheader' ) ); ?> </p>
+      <h1 class="margin-bottom-container"><?= get_field('header');
+                                          ?></h1>
+      <p class="header__ingress"> <?= wp_strip_all_tags(get_field('subheader'));
+                                  ?> </p>
       <div class="header__links">
         <a href="#" target="_blank" class="button button--header-link" data-toggle="modal" data-target="#videoModal">
           <i class="fa fa-play" aria-hidden="true"></i>
@@ -48,8 +50,6 @@ $recent_posts = new WP_Query( $args );
 <style>
   .wave {
     background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_home.svg) repeat-x center;
-    height: 40px;
-    width: 100%;
   }
 </style>
 
@@ -72,9 +72,12 @@ $recent_posts = new WP_Query( $args );
     </a>
   </section>
   <section class="home__videos">
-    <?php if ( $recent_posts->have_posts() ) : while ( $recent_posts->have_posts() ) : $recent_posts->the_post();
-      get_template_part( 'partials/content', 'excerpt' );
-    endwhile;  wp_reset_postdata(); endif; ?>
+    <?php if ($recent_posts->have_posts()) : while ($recent_posts->have_posts()) : $recent_posts->the_post();
+    get_template_part('partials/content', 'excerpt');
+    endwhile;
+    wp_reset_postdata();
+    endif;
+    ?>
   </section>
   <section class="home__bottom">
     <a class="button button--section-link center-block" href="blog-page">

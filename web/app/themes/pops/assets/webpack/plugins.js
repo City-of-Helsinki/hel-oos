@@ -21,26 +21,23 @@ var isProduction = !!((argv.env && argv.env.production) || argv.p);
  * @type {*[]}
  */
 var commonPlugins = [
-  new CopyWebpackPlugin([
-    {
-      from: path.resolve(__dirname, '../images/**/*'),
-      to: 'images',
-      flatten: true
-    }
-  ], {
-
-  }),
+  new CopyWebpackPlugin(
+    [
+      {
+        from: path.resolve(__dirname, '../images/**/*'),
+        to: 'images',
+        flatten: true,
+      },
+    ],
+    {}
+  ),
   new webpack.LoaderOptionsPlugin({
     minimize: isProduction,
     debug: !isProduction,
     stats: { colors: true },
     postcss: [
       autoprefixer({
-        browsers: [
-          'last 2 versions',
-          'android 4',
-          'opera 12',
-        ],
+        browsers: ['last 2 versions', 'android 4', 'opera 12'],
       }),
     ],
     eslint: {
@@ -72,9 +69,11 @@ var commonPlugins = [
       cleanupIDs: false,
     },
     jpegtran: null,
-    plugins: [imageminMozjpeg({
-      quality: 75,
-    })]
+    plugins: [
+      imageminMozjpeg({
+        quality: 75,
+      }),
+    ],
   }),
   new ExtractTextPlugin({
     filename: 'styles/[name].css',
@@ -89,22 +88,20 @@ var commonPlugins = [
 var developPlugins = [
   // Disabled 'till the webpack-dev-server proxy is fixed :'(
   // new DashboardPlugin(),
-  new BrowserSyncPlugin(
-    {
-      host: 'localhost',
-      port: pkg.config.port,
-      proxy: pkg.config.devUrl,
-      open: false,
-      files: ['{library,partials,templates}/**/*.php', '*.php'],
-      logLevel: 'warn'
-      // Don't notify abt reloading
-      // notify: false,
-      // Let webpack handle the reload
-      // codeSync: false,
-    }
-  ),
+  new BrowserSyncPlugin({
+    host: 'localhost',
+    port: pkg.config.port,
+    proxy: pkg.config.devUrl,
+    open: false,
+    files: ['{library,partials,templates}/**/*.php', '*.php'],
+    logLevel: 'warn',
+    // Don't notify abt reloading
+    // notify: false,
+    // Let webpack handle the reload
+    // codeSync: false,
+  }),
   new webpack.optimize.OccurrenceOrderPlugin(),
-  new webpack.NoErrorsPlugin()
+  new webpack.NoErrorsPlugin(),
 ];
 
 /**
@@ -117,15 +114,15 @@ var productionPLugins = [
   new webpack.optimize.OccurrenceOrderPlugin(),
   new webpack.optimize.UglifyJsPlugin({
     compressor: {
-      warnings: false
-    }
+      warnings: false,
+    },
   }),
   new OptimizeCssAssetsPlugin({
     cssProcessorOptions: {
       discardComments: {
-        removeAll: true
-      }
-    }
+        removeAll: true,
+      },
+    },
   }),
   new FaviconsWebpackPlugin({
     title: pkg.description,
@@ -133,19 +130,19 @@ var productionPLugins = [
     prefix: 'images/icons/',
     statsFilename: 'iconstats-[hash].json',
     icons: {
-      android: true,              // Create Android homescreen icon. `boolean`
-      appleIcon: true,            // Create Apple touch icons. `boolean` or `{ offset: offsetInPercentage }`
-      appleStartup: false,        // Create Apple startup images. `boolean`
-      coast: { offset: 25 },      // Create Opera Coast icon with offset 25%. `boolean` or `{ offset: offsetInPercentage }`
-      favicons: true,             // Create regular favicons. `boolean`
-      firefox: true,              // Create Firefox OS icons. `boolean` or `{ offset: offsetInPercentage }`
-      windows: true,              // Create Windows 8 tile icons. `boolean`
-      yandex: true                // Create Yandex browser icon. `boolean`
-    }
-  })
+      android: true, // Create Android homescreen icon. `boolean`
+      appleIcon: true, // Create Apple touch icons. `boolean` or `{ offset: offsetInPercentage }`
+      appleStartup: false, // Create Apple startup images. `boolean`
+      coast: { offset: 25 }, // Create Opera Coast icon with offset 25%. `boolean` or `{ offset: offsetInPercentage }`
+      favicons: true, // Create regular favicons. `boolean`
+      firefox: true, // Create Firefox OS icons. `boolean` or `{ offset: offsetInPercentage }`
+      windows: true, // Create Windows 8 tile icons. `boolean`
+      yandex: true, // Create Yandex browser icon. `boolean`
+    },
+  }),
 ];
 
 module.exports = {
   develop: commonPlugins.concat(developPlugins),
-  production: commonPlugins.concat(productionPLugins)
+  production: commonPlugins.concat(productionPLugins),
 };

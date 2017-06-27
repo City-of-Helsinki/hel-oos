@@ -58,7 +58,8 @@
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/responsive-video-embed": "^0.2.2",
-    "ACF/ACFPro": "*"
+    "ACF/ACFPro": "*",
+    "wpackagist-plugin/ajax-load-more": "^3.1.0"
   },
   "require-dev": {
     "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",

@@ -12705,6 +12705,7 @@ p,
 
 .wave {
   animation: slideInFromLeft 2s ease 0s normal forwards;
+  height: 96px;
 }
 
 @media all and (max-width: 767px) {
@@ -12818,12 +12819,13 @@ figure {
 
 .main-container,
 .about,
-.blog-archive,
 .blog__item,
 .download,
 .download__item,
 main.home,
-.home__videos {
+.home__videos,
+.blog-container,
+.blog-archive {
   padding: 48px 32px;
 }
 
@@ -12896,13 +12898,17 @@ main.home,
 @media all and (max-width: 767px) {
   .main-container,
   .about,
-  .blog-archive,
   .blog__item,
   .download,
   .download__item,
   main.home,
   .home__videos {
     padding: 16px;
+  }
+
+  .blog-container,
+  .blog-archive {
+    padding: 16px 0;
   }
 
   .medium-container {
@@ -12948,6 +12954,16 @@ main.home,
 
 .search-form label {
   font-weight: normal;
+}
+
+.licence {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  background-color: #0580DB;
 }
 
 .preview {
@@ -13148,7 +13164,7 @@ body#tinymce {
 
 @media all and (max-width: 767px) {
   .blog__item {
-    top: 0px;
+    top: 0;
   }
 
   .blog__text {
@@ -13333,7 +13349,6 @@ main.home {
 .home__videos {
   margin-left: -15px;
   margin-right: -15px;
-  padding-top: 0;
 }
 
 .home__videos:before,
@@ -13344,6 +13359,12 @@ main.home {
 
 .home__videos:after {
   clear: both;
+}
+
+@media all and (min-width: 768px) {
+  .home__videos {
+    padding-top: 0;
+  }
 }
 
 .home__bottom {
@@ -13399,7 +13420,6 @@ main.home {
 
 .footer .main-container,
 .footer .about,
-.footer .blog-archive,
 .footer .blog__item,
 .footer .download,
 .footer .download__item,
@@ -13412,7 +13432,6 @@ main.home {
 @media all and (max-width: 767px) {
   .footer .main-container,
   .footer .about,
-  .footer .blog-archive,
   .footer .blog__item,
   .footer .download,
   .footer .download__item,

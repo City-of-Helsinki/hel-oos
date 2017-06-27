@@ -6,7 +6,7 @@
  * @package POPS
  */
 
-get_header();
+get_header('blog');
 
 ?>
 

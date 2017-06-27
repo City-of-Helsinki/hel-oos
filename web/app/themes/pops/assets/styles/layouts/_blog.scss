@@ -1,7 +1,7 @@
 .blog {
   &-archive {
     @extend .container-fluid;
-    @extend .main-container;
+    @extend .blog-container;
     max-width: 1280px;
   }
   &__item {
@@ -25,7 +25,7 @@
 
   @media all and (max-width: $screen-xs-max) {
     &__item {
-      top: 0px;
+      top: 0;
     }
     &__text {
       text-align: initial;
