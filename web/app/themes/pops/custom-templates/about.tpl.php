@@ -19,18 +19,15 @@ $other_contacts = count(get_field('other_contact_repeater'));
 
   <section class="row main-container text-center">
     <div class="header-container">
-      <h1 class="margin-bottom-container"><?= get_field('header');
-                                          ?></h1>
-      <p class="header__ingress"> <?= wp_strip_all_tags(get_field('subheader'));
-                                  ?> </p>
+      <h1 class="margin-bottom-container"><?= get_field('header'); ?></h1>
+      <p class="header__ingress"> <?= wp_strip_all_tags(get_field('subheader')); ?> </p>
     </div>
   </section>
 </header>
 
 <style>
   .wave {
-    background: url(<?php echo UTILS()->get_image_uri();
-                    ?>/slice_about.svg) repeat-x center;
+    background: url(<?php echo UTILS()->get_image_uri(); ?>/slice_about.svg) repeat-x center;
   }
 </style>
 
