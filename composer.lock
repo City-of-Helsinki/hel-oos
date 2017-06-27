@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d593619c11e6204b8bd089ac3936c30e",
+    "hash": "6c73ca64e2839533ef6b287f60b62556",
+    "content-hash": "bf7cd331752f930c3af2b6daf4efe366",
     "packages": [
         {
             "name": "ACF/ACFPro",
@@ -122,7 +123,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13T20:53:52+00:00"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -161,7 +162,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-05-16T22:48:14+00:00"
+            "time": "2017-05-16 22:48:14"
         },
         {
             "name": "johnpbloch/wordpress-core",
@@ -198,7 +199,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-05-16T22:48:08+00:00"
+            "time": "2017-05-16 22:48:08"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -246,7 +247,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-06-11T15:15:30+00:00"
+            "time": "2015-06-11 15:15:30"
         },
         {
             "name": "oscarotero/env",
@@ -288,7 +289,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08T17:14:32+00:00"
+            "time": "2016-05-08 17:14:32"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -345,7 +346,7 @@
             "keywords": [
                 "wordpress wp bcrypt password"
             ],
-            "time": "2016-03-01T16:27:06+00:00"
+            "time": "2016-03-01 16:27:06"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -395,7 +396,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01T10:05:43+00:00"
+            "time": "2016-09-01 10:05:43"
         },
         {
             "name": "wpackagist-plugin/ajax-load-more",
@@ -419,15 +420,15 @@
         },
         {
             "name": "wpackagist-plugin/responsive-video-embed",
-            "version": "0.2.2",
+            "version": "0.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/responsive-video-embed/",
-                "reference": "tags/0.2.2"
+                "reference": "tags/0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/responsive-video-embed.0.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/responsive-video-embed.0.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -458,7 +459,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ajax-thumbnail-rebuild/",
-            "time": "2014-05-04T08:45:49+00:00"
+            "time": "2014-05-04 08:45:49"
         },
         {
             "name": "wpackagist-plugin/debug-bar",
@@ -479,7 +480,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/debug-bar/",
-            "time": "2017-05-15T12:59:36+00:00"
+            "time": "2017-05-15 12:59:36"
         },
         {
             "name": "wpackagist-plugin/debug-bar-console",
@@ -500,7 +501,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/debug-bar-console/",
-            "time": "2012-08-07T20:42:00+00:00"
+            "time": "2012-08-07 20:42:00"
         },
         {
             "name": "wpackagist-plugin/log-deprecated-notices",
@@ -521,7 +522,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/log-deprecated-notices/",
-            "time": "2017-01-28T00:56:28+00:00"
+            "time": "2017-01-28 00:56:28"
         },
         {
             "name": "wpackagist-plugin/p3-profiler",
@@ -542,7 +543,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/p3-profiler/",
-            "time": "2015-04-20T16:03:00+00:00"
+            "time": "2015-04-20 16:03:00"
         },
         {
             "name": "wpackagist-plugin/post-type-switcher",
@@ -583,7 +584,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/query-monitor/",
-            "time": "2017-04-05T00:01:06+00:00"
+            "time": "2017-04-05 00:01:06"
         },
         {
             "name": "wpackagist-plugin/rewrite-rules-inspector",
@@ -604,7 +605,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/",
-            "time": "2017-06-08T15:35:26+00:00"
+            "time": "2017-06-08 15:35:26"
         },
         {
             "name": "wpackagist-plugin/simply-show-ids",
@@ -625,7 +626,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simply-show-ids/",
-            "time": "2010-06-26T02:40:54+00:00"
+            "time": "2010-06-26 02:40:54"
         },
         {
             "name": "wpackagist-plugin/theme-check",
@@ -646,7 +647,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/theme-check/",
-            "time": "2016-12-04T21:19:00+00:00"
+            "time": "2016-12-04 21:19:00"
         },
         {
             "name": "wpackagist-plugin/user-switching",
@@ -667,7 +668,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/user-switching/",
-            "time": "2017-04-12T23:53:02+00:00"
+            "time": "2017-04-12 23:53:02"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
@@ -688,7 +689,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/",
-            "time": "2016-12-08T20:04:42+00:00"
+            "time": "2016-12-08 20:04:42"
         },
         {
             "name": "wpackagist-plugin/wp-sweep",
