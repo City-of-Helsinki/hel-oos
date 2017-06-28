@@ -31,13 +31,8 @@ get_header('blog');
 	<section class="container-fluid">
 		<?php
 		if (have_posts()) :
-			echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="2" button_label="Lataa lisää"]');
+			echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="4" button_label="Lataa lisää"]');
 		endif;
-		?>
-	</section>
-
-	<section class="pagination">
-		<?php echo UTILS()->pagination();
 		?>
 	</section>
 </main>
