@@ -25,7 +25,7 @@ wp_footer();
     <div class="row content-container">
       <div class="main-container">
         <img src="<?php echo UTILS()->get_image_uri();
-                  ?>/oos.png" style="height: 120px;" />
+                  ?>/logo.png" style="height: 120px;" />
       </div><!--
     --><div class="main-container">
         <img src="<?php echo UTILS()->get_image_uri();
