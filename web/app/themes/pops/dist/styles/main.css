@@ -13383,9 +13383,13 @@ main.home {
   clear: both;
 }
 
+.home .modal {
+  overflow: visible !important;
+}
+
 .home .modal-dialog {
   width: auto;
-  top: 50%;
+  top: 50% !important;
   transform: translateY(-50%) !important;
 }
 

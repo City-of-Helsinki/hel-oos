@@ -21,10 +21,13 @@ main.home {
     @include make-row();
     text-align: center;
   }
+  .modal {
+    overflow: visible !important;
+  }
   .modal-dialog {
     width: auto;
     @extend .content-container;
-    top: 50%;
+    top: 50% !important;
     transform: translateY(-50%) !important;
   }
 }
