@@ -44,50 +44,45 @@ $other_contacts = count(get_field('other_contact_repeater'));
       ?>
     </section>
     <?php if (have_rows('main_contact')) : ?>
-      <section class="about__contact--main">
-        <?php while (have_rows('main_contact')) : the_row();
-        ?>
+      <section class="about__contact--main row">
+        <?php while (have_rows('main_contact')) : the_row(); ?>
+
+          <?php
+          $email = get_sub_field('email');
+          $number = get_sub_field('phone');
+          ?>
+
           <div class="col-xs-12 col-sm-<?= 12 / $main_contacts ?> about-container">
             <h4><?= get_sub_field('name') ?></h4>
-            <a href="mailto:<?= get_sub_field('email') ?>"><?= get_sub_field('email') ?></a>
-            <a href="#"><?= get_sub_field('phone') ?></a>
+            <a href="mailto:<?= antispambot( $email ) ?>"><?= antispambot( $email ) ?></a>
+            <a href="tel:<?= antispambot( $number ) ?>"><?= antispambot( $number ) ?></a>
           </div>
-        <?php endwhile;
-        ?>
+        <?php endwhile; ?>
       </section>
-    <?php endif;
-    ?>
+    <?php endif; ?>
     <?php if (have_rows('images')) : ?>
       <section class="about__images">
-        <?php while (have_rows('images')) : the_row();
-        ?>
+        <?php while (have_rows('images')) : the_row(); ?>
           <img src="<?= get_sub_field('image') ?>" class="about-container col-xs-12 col-sm-<?= 12 / $images ?>" />
-        <?php endwhile;
-        ?>
+        <?php endwhile; ?>
       </section>
-    <?php endif;
-    ?>
+    <?php endif; ?>
     <?php if (get_field('other_contact_text')) : ?>
       <section class="about__text text-center text-muted">
           <?= get_field('other_contact_text') ?>
       </section>
-    <?php endif;
-    ?>
+    <?php endif; ?>
     <?php if (have_rows('other_contact_repeater')) : ?>
       <section class="about__contact--other">
-        <?php while (have_rows('other_contact_repeater')) : the_row();
-        ?>
+        <?php while (have_rows('other_contact_repeater')) : the_row(); ?>
           <div class="contact-item">
             <h5><?= get_sub_field('name') ?></h5>
             <span class="text-muted"><?= get_sub_field('title') ?></span>
           </div>
-        <?php endwhile;
-        ?>
+        <?php endwhile; ?>
       </section>
-    <?php endif;
-    ?>
+    <?php endif; ?>
   </div>
 </main>
 
-<?php get_footer();
-?>
+<?php get_footer(); ?>
