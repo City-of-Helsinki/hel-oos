@@ -13384,13 +13384,22 @@ main.home {
 }
 
 .home .modal {
-  overflow: visible !important;
+  text-align: center;
+  padding: 0 !important;
+}
+
+.home .modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
 }
 
 .home .modal-dialog {
-  width: auto;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
+  width: 95%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .footer {
