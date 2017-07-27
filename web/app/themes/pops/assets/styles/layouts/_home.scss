@@ -1,0 +1,41 @@
+main.home {
+  @extend .container-fluid;
+  @extend .main-container;
+  max-width: 1280px;
+}
+
+.home {
+  &__links {
+    color: $brand-info;
+    @include make-row();
+    @extend .header-container;
+  }
+  &__videos {
+    @include make-row();
+    @extend .main-container;
+    @media all and (min-width: $screen-sm-min) {
+      padding-top: 0;
+    }
+  }
+  &__bottom {
+    @include make-row();
+    text-align: center;
+  }
+  .modal {
+    text-align: center;
+    padding: 0 !important;
+  }
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  .modal-dialog {
+    width: 95%;
+    @extend .content-container;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
