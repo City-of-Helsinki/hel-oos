@@ -1,0 +1,71 @@
+.main-container, .blog-container {
+  padding: 48px 32px;
+}
+.medium-container, .preview-container {
+  padding: 32px !important;
+}
+.header-container {
+  display: block;
+  max-width: 1000px;
+  margin: auto !important;
+  padding: 32px;
+}
+.elem-container {
+  display: block;
+  margin: 12px;
+}
+.padding-top-container {
+  padding: 16px 0 0 0;
+}
+.margin-bottom-container {
+  margin: 0 0 16px 0;
+}
+.content-container {
+  padding: 32px;
+  max-width: 1000px;
+  margin: auto;
+}
+.about-container {
+  padding: 32px !important;
+  text-align: center;
+  font-weight: 500;
+  & > * {
+    display: block;
+    line-height: 32px;
+    margin: 0 !important;
+  }
+  & > a {
+    color: $brand-info;
+    font-size: $font-size-h5;
+  }
+}
+
+@media all and (max-width: $screen-xs-max) {
+  .main-container {
+    padding: 16px;
+  }
+  .blog-container {
+    padding: 16px 0;
+  }
+  .medium-container {
+    padding: 16px 0 0 0 !important;
+  }
+  .header-container {
+    padding: 0;
+  }
+  .elem-container {
+    margin: 4px;
+  }
+  .margin-bottom-container {
+    margin: 0 0 12px 0;
+  }
+  .preview-container {
+    padding: 12px !important;
+  }
+  .content-container {
+    padding: 15px;
+  }
+  .about-container {
+    padding: 8px !important;
+  }
+}
