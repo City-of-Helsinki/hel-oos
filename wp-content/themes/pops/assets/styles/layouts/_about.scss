@@ -1,0 +1,27 @@
+.about {
+  @extend .container-fluid;
+  @extend .main-container;
+  max-width: 1280px;
+  &__content {
+    @include make-row();
+  }
+  &__text {
+    @extend .content-container;
+    line-height: 32px;
+    font-size: $font-size-large;
+  }
+  &__contact {
+    &--main, &--other {
+      @extend .content-container;
+      text-align: center;
+      .contact-item {
+        @include inline-block-item( 1 / 4 * 100% );
+        @extend .about-container;
+      }
+    }
+  }
+  &__images {
+    @include make-row();
+    @extend .header-container;
+  }
+}
