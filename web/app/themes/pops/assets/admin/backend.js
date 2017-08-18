@@ -1,3 +1,0 @@
-(function admin() {
-  // Do your magig...
-}());
