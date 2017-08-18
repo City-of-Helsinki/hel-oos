@@ -2,4 +2,4 @@
 Basic WP installation
 
 ## Contact info
-* [Karri Mehtälä](Karri.Mehtala@hel.fi)
+* [Karri Mehtälä](mailto:Karri.Mehtala@hel.fi)
