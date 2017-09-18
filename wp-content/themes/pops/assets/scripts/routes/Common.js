@@ -10,6 +10,12 @@ export default {
       : otherActive(pageTitle, headerMenuLinks, footerMenuLinks);
 
     $('.preview').matchHeight();
+
+    //Search icon toggle
+      $('.search-toggle').on('click', (e) => {
+        e.preventDefault();
+        $('.search-container').slideToggle();
+      })
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
