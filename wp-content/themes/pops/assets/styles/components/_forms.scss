@@ -13,3 +13,16 @@
   @extend .btn;
   @extend .btn-default;
 }
+
+.oos-search-form-control {
+  @extend .form-control;
+  border-radius: 0;
+  border-color: #FFF;
+  box-shadow: none;
+  color: #666;
+
+  &:focus {
+    box-shadow: none;
+    border-color: #FFF;
+  }
+}

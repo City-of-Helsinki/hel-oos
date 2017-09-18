@@ -1,0 +1,17 @@
+.blog-search {
+  text-align: center;
+
+  .search-toggle {
+    margin-top: 0;
+    font-size: 2rem;
+    cursor: pointer;
+
+    @media screen and (min-width: $screen-sm-min) {
+      font-size: 3rem;
+    }
+  }
+
+  .search-container {
+    display: none;
+  }
+}

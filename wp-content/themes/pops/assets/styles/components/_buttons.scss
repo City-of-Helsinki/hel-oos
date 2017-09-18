@@ -43,3 +43,8 @@
     }
   }
 }
+
+.btn-search {
+  @include button-variant(#666, #FFF, #FFF);
+  border-radius: 0;
+}
