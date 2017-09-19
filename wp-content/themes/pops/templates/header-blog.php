@@ -17,6 +17,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="theme-color" content="#F5A3C7" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google-site-verification" content="LtJR7dXI-7BdgTN7III8edPHZ9kI-QbwVtYThdfgOts" />
+    <meta name="msvalidate.01" content="5984877F1C5D04022CBABCADA9563839" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
