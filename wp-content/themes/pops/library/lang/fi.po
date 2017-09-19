@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP-POPS\n"
-"POT-Creation-Date: 2017-09-18 11:03+0300\n"
-"PO-Revision-Date: 2017-09-18 13:01+0300\n"
+"POT-Creation-Date: 2017-09-19 14:02+0300\n"
+"PO-Revision-Date: 2017-09-19 14:02+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -321,11 +321,11 @@ msgstr ""
 msgid "Sidebar"
 msgstr ""
 
-#: partials/no-results-404.php:13
+#: partials/no-results-404.php:13 templates/404.php:16
 msgid "Error 404: Page not found"
 msgstr "Error 404: Sivua ei löydy"
 
-#: partials/no-results-404.php:14
+#: partials/no-results-404.php:14 templates/404.php:32
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -346,6 +346,10 @@ msgstr "Mitään ei löytynyt"
 #: partials/no-results.php:14
 msgid "It seems there's no content at this time. "
 msgstr "Näyttää, että sisältöä ei ole. "
+
+#: templates/index.php:21
+msgid "Search"
+msgstr "Haku"
 
 #: templates/search.php:16
 msgid "Search results with keyword"

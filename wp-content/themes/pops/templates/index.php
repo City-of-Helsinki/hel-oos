@@ -18,10 +18,10 @@ get_header( 'blog' );
     </div>
     <div class="blog-search">
         <h2 class="search-toggle">
-            <i class="fa fa-search" aria-hidden="true"></i>
+            <i class="fa fa-search" aria-hidden="true"></i> <?php _e( 'Search', TEXT_DOMAIN ) ?>
         </h2>
         <div class="search-container">
-	        <?php get_search_form(); ?>
+			<?php get_search_form(); ?>
         </div>
     </div>
 </section>
