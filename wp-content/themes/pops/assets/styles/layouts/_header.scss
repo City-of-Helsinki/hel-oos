@@ -60,6 +60,12 @@
       list-style-type: none;
       display: inline-block;
       font-weight: 500;
+
+      &.menu__item--current {
+        > a {
+          border-bottom: 0.2rem solid white;
+        }
+      }
       .menu__link {
         @extend .elem-container;
         opacity: .9;
@@ -78,6 +84,17 @@
     font-size: $font-size-h3;
     @media all and (max-width: $screen-xs-max) {
       font-size: $font-size-h4;
+    }
+  }
+}
+
+//Add underline to blog menu item, when single post is opened
+.single-post {
+  .header__menu {
+    .blog-menu-item {
+      > a {
+        border-bottom: 0.2rem solid white;
+      }
     }
   }
 }
