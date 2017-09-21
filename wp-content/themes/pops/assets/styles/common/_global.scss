@@ -26,10 +26,10 @@ body {
   min-height: 100%;
   background-color: #F5F5F5;
   overflow-x: hidden;
-}
 
-.about-page, .download-page {
-  background-color: #FFF !important;
+  &.page-template-about-tpl, &.page-template-download-tpl {
+    background-color: #FFF;
+  }
 }
 
 img {
