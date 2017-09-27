@@ -87,7 +87,7 @@ $aboutPageUrl = $aboutPageId ? get_permalink($aboutPageId) : '/hanke';
 		?>
     </section>
     <section class="home__bottom">
-        <a class="button button--section-link center-block" href="blog-page">
+        <a class="button button--section-link center-block" href="<?php echo $blogPageUrl ?>">
             <span>Kaikki artikkelit</span>
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
         </a>
