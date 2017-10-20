@@ -1,3 +1,4 @@
+/* eslint-disable no-undef,no-console */
 export default {
   init() {
       /**
@@ -12,7 +13,15 @@ export default {
     //   ? firstOrPostActive(headerMenuLinks.get()[0], footerMenuLinks.get()[0])
     //   : otherActive(pageTitle, headerMenuLinks, footerMenuLinks);
 
-    $('.preview').matchHeight();
+      $('.preview').matchHeight();
+
+      const preview = () => {
+          $.fn.almComplete = () => {
+              $('.preview').matchHeight();
+          }
+      };
+
+      preview();
 
     //Search icon toggle
       $('.search-toggle').on('click', (e) => {
