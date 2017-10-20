@@ -17,7 +17,10 @@ export default {
 
       const preview = () => {
           $.fn.almComplete = () => {
-              $('.preview').matchHeight();
+              //$('.preview').matchHeight();
+              setTimeout(() => {
+                  $('.preview').matchHeight();
+              }, 500);
           }
       };
 
